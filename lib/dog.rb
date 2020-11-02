@@ -16,18 +16,17 @@ beyonce = Person.new("Beyonce")
 
 
 class Dog
-    def initialize(name, breed)
-        @name = name
+    def initialize(breed)
+        @breed = breed
+      end
+      
+    def breed=(breed)
         @breed = breed
     end
-
+    
     def breed
         @breed
     end
-
-    def breed=(dog_breed)
-        @breed = dog_breed
-    end
 end
 
-fido = Dog.new("Fido, Mutt")
+fido = Dog.new("Fido", "Mutt")
